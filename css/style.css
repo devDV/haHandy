@@ -79,7 +79,7 @@ input[type="submit"] {
 .description__title {
     display: block;
     font-size: 4em;
-	margin-bottom: -15px
+	line-height: 0.7
 }
 
 .description__subtitle {
@@ -87,11 +87,15 @@ input[type="submit"] {
     display: block;
     font-weight: 100;
     font-size: 2em;
+    line-height: 0.8;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .description__subsubtitle {
     display: block;
     font-weight: 100;
     font-size: 1em;
+    line-height: 0.9;
 }
 
 .page-header__main-menu {
