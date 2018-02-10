@@ -14,15 +14,15 @@
   <header class="page-header">
       <div class="page-header__inner">
           <div class="page-header-top">
-            <div class="logo page-header__logo">
-	            <img class="logo__picture" src="./images/haHandy-stepbystep.png" alt="step by step" width="200">
-                <!--<img class="logo__picture" src="./images/devDV-logo-dV.png" alt="Профессиональное объединение разработчиков ДВ" width="200">-->
-            </div><!-- /logo -->
             <div class="description">
                 <span class="description__title">master 🤘 classes</span>
                 <span class="description__subtitle" href="/">про информационные технологии</span>
                 <span class="description__subsubtitle" href="/">оффлайн мастерклассы про IT в Хабаровске</span>
             </div>
+			<div class="logo page-header__logo visually-hidden">
+	            <img class="logo__picture" src="./images/haHandy-stepbystep.png" alt="step by step" width="200">
+                <!--<img class="logo__picture" src="./images/devDV-logo-dV.png" alt="Профессиональное объединение разработчиков ДВ" width="200">-->
+            </div><!-- /logo -->
             <ul class="social-links page-header__social-links">
                 <!-- <li>
                     <a class="social-links__item" href="#" target="_blank" title="Наш канал на YouTube"></a>
@@ -44,7 +44,7 @@
                 <!-- <button class="search__button"</button> -->
             </div><!-- /search -->
           </div><!-- /page-header-top -->
-          <div class="page-header-bottom">
+          <div class="page-header-bottom" style="display: none;">
               <nav class="main-menu page-header__main-menu">
                   <span class="main-menu__item  main-menu__item--current">Главная</span>
                   <!--<a class="main-menu__item  main-menu__item--blue" href="honorboard.html">Мастера</a>-->
@@ -56,8 +56,9 @@
       </div><!-- /page-header__inner -->
   </header><!-- /page-header -->
   <main class="page-content">
-      <section class="page-content__inner">
-        <h1 class="page-title visually-hidden">Мастерклассы</h1>
+      <section class="page-content__inner  content-section">
+	    <p class="page-content__concept">два часа, два мастера, один вопрос разбирают с различных сторон</p>
+        <h1 class="page-title">Мастерклассы</h1> <!--visually-hidden-->
         <ul class="content-cards page-content__content-cards">
             <li class="content-cards-item  page-content__cards-item">
                 <img class="content-cards-item__cover" src="./images/haHandy1.jpg" width="480" alt="">
@@ -178,7 +179,7 @@
         </div>--><!-- /pager -->
       </section><!-- /page-content__inner -->
       
-      <section class="archive" id="archive">
+      <section class="archive  content-section" id="archive">
 	   <div class="archive__inner">
         <h2 class="archive__title">Прошедшие мероприятия</h2>
         <ul class="archive-cards">
@@ -218,34 +219,35 @@
         </ul><!-- /archive-cards -->
        </div><!-- /archive__inner -->
       </section><!-- /archive -->
-      <section class="about about--color-ccc" id="about">
-          <div class="about__inner  about-content">
+      <section class="about content-section" id="about">
+          <div class="about__inner">
               <h2 class="about__title">О проекте</h2>
               <div class="about__description">
-              <p>Мало в Хабаровске активностей по IT. Провели мы ряд локальных мероприятий:</p>
-	              <ul><li>по opensource (<a target="_blank" href="https://nixdv.org">https://nixdv.org</a>),</li> 
-	              <li>по фронтенд-разработке (<a target="_blank" href="https://hajs.ru">https://hajs.ru</a>),</li> 
-	              <li>по корпоративной разработке (<a target="_blank" href="https://ha1s.ru">https://ha1s.ru</a>) –</li></ul>
-	              <p>но нам этого показалось мало. Тогда мы себе поставили Цель: каждую неделю проводить мероприятие АйТи направленности – мастеркласс, митап или конференцию. Так и родился формат haHandy – как расширение митапов и конференций, для подробного разбора интересных вопросов, на которые не хватало времени в формате докладов. Мы пробуем новые форматы на наших мероприятиях и открыты для предложений и сотрудничества. </p>
-              <p>Мы – это сначала инициативная группа из четверых различных разработчиков (да-да, прямо как в трех мушкетерах), а впоследствии ОО “Профессиональные Разработчики ДВ”, в простонародье devDV.</p>
-              <p>Если вам потребуется связаться безотлагательно с нами – найти Вы нас легко сможете в мессенджере telegram:
-	              <ul><li>по opensource (<a target="_blank" href="https://t.me/nixdv">https://t.me/nixDV</a>),</li> 
-	              <li>по фронтенд-разработке (<a target="_blank" href="https://t.me/hajs_chat">https://t.me/haJS_chat</a>),</li> 
-	              <li>по корпоративной разработке (<a target="_blank" href="https://t.me/ha1sru">https://t.me/ha1Sru</a>),</li>
-	              <li>по вопросам общественного объединения (<a target="_blank" href="https://t.me/devdv">https://t.me/devDV</a>),</li></ul>
+              	<p>Мало очень в Хабаровске активностей по IT, мы попробовали это исправить. Провели ряд локальных мероприятий:</p>
+			  	<ul>
+		          <li>по opensource (сайт: <a target="_blank" href="https://nixdv.org">nixDV.org</a>, чат: <a target="_blank" href="https://t.me/nixdv">t.me/nixDV</a>),</li> 
+	              <li>по фронтенд-разработке (сайт: <a target="_blank" href="https://hajs.ru">haJS.ru</a>, чат: <a target="_blank" href="https://t.me/hajs_chat">t.me/haJS_chat</a>),</li> 
+	              <li>по корпоративной разработке (сайт: <a target="_blank" href="https://ha1s.ru">ha1s.ru</a>, чат: <a target="_blank" href="https://t.me/ha1sru">t.me/ha1sru</a>) –</li>
+	          	</ul>
+			  	<p>но этого показалось мало. Тогда мы себе поставили Цель: каждую неделю проводить мероприятие АйТи направленности – мастеркласс, митап или конференцию. Так и родился формат haHandy – как расширение митапов и конференций, для подробного разбора интересных вопросов, на которые не хватало времени в формате докладов.</p>
+			  	<p>Мы – это сначала инициативная группа из двух, потом из четверых разработчиков из различных областей (да-да, прямо как в трёх мушкетерах), а впоследствии ОО “Профессиональные Разработчики ДВ”, если кратко, то <a target="_blank" href="https://devdv.ru">devDV</a>.</p>
+	            <ul>
+	              <li>по вопросам общественного объединения есть чат <a target="_blank" href="https://t.me/devdv">t.me/devDV</a></li>
+	            </ul>
+	            <p>Пробуем мы новые форматы активностей на наших мероприятиях и открыты для предложений и сотрудничества.</p>
               </div>
           </div><!-- /about__inner -->
       </section><!-- /about -->
-      <section class="subscribe subscribe--color-ccc" id="subscribe">
+      <section class="subscribe content-section" id="subscribe">
           <div class="subscribe__inner  subscribe-content">
               <h2 class="subscribe__title">Подписка</h2>
-              <div class="subscribe__description  subscribe-content"><div class="subscribe-description__inner" style="width: 70%;">
-              <p>Раз в неделю, обычно по вторникам, мы рассказываем о предстоящих мероприятиях из мира IT в Хабаровске на нашем telegram канале.</p>
+              <div class="subscribe__description  subscribe-content"><div class="subscribe-description__inner">
+              <p>Раз в неделю, обычно по вторникам, мы анонсируем предстоящие мероприятия на нашем <a href="https://t.me/haHandy">telegram канале</a>.</p>
               <!--<form class="subscribe-form" method="post">
                   <label><input class="subscribe-form__email" type="text" placeholder="Введите email"></label>
                   <input class="subscribe-form__submit-btn" type="submit" value="Подписаться">
-              </form>-->
-              <p>Перейти на telegram канал: <a href="https://t.me/haHandy">t.me/haHandy</a></p>
+              </form>
+              <p>Перейти на наш telegram канал: <a href="https://t.me/haHandy">t.me/haHandy</a></p>-->
               </div></div>
               <ul class="social-links">
                   <!--<li>
@@ -269,8 +271,8 @@
   </main><!-- /page-content -->
   <footer class="page-footer">
       <div class="page-footer__inner footer-content">
-        <span class="page-footer__copyright">© haHandy – оффлайн мастерклассы про информационные технологии в Хабаровске, 2018</span><br>
-        <span class="page-footer__contacts"><a class="page-footer__contact-link" href="https://t.me/haHandy">https://t.me/haHandy</a></span>
+        <span class="page-footer__copyright">🤘 <a class="page-footer__contact-link" href="https://t.me/haHandy">t.me/haHandy</a> – оффлайн мастерклассы про информационные технологии в Хабаровске, 2018</span>
+        <!--<span class="page-footer__contacts"></span>-->
       </div><!-- /page-footer__inner -->
   </footer><!-- /page-footer -->
 </body>

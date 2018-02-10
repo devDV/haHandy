@@ -40,19 +40,19 @@ input[type="submit"] {
     padding-left: 25px;
     padding-right: 25px;
     max-width: 1200px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .page-header-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /*space-between;*/
     align-items: center;
     height: 200px;
     min-height: 200px;
-    /*background-image: url('../images/haHandy-stepbystep.png');
+    background-image: url('../images/haHandy-stepbystep.png');
     background-position: right center;
     background-size: 200px 200px;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
 }
 
 .page-header-bottom {
@@ -144,9 +144,21 @@ input[type="submit"] {
     padding-left: 25px;
     padding-right: 25px;
     max-width: 1200px;
-    width: 100%;
+    /*width: 100%;*/
 }
-
+.page-title{
+	/*text-align: center;*/
+}
+.page-content__concept {
+	margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 1200px;
+    /*width: 100%;*/
+	text-align: center;
+	font-weight: 100;
+	font-size: 2em;
+}
 
 .page-footer {
     background-color: #000000;
@@ -158,7 +170,7 @@ input[type="submit"] {
     padding-left: 25px;
     padding-right: 25px;
     max-width: 1200px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .page-footer {
@@ -194,8 +206,8 @@ input[type="submit"] {
 }
 
 .page-content__content-cards {
-    width: 1250px;
-    max-width: 100%;
+    /*width: 1250px;
+    max-width: 100%;*/
     /*padding: 0px;  margin: 0px; */
 }
 
@@ -205,13 +217,15 @@ input[type="submit"] {
     padding-bottom: 30px;
 }
 
-.content-cards-item__cover{}
+.content-cards-item__cover{
+	border-bottom: 5px #4267B2 solid;
+}
 
 .content-cards-item__coveradd{
 	display: flex;
 	position: relative;
 	left: 5%;
-	top: -35px;
+	top: -37px;
 }
 
 .content-cards-item__title {
@@ -244,7 +258,7 @@ input[type="submit"] {
 
 .content-publish-date {
     position: absolute;
-    top: 17%;
+	top: 15px;
     left: 17px;
 }
 
@@ -285,8 +299,6 @@ input[type="submit"] {
 }
 /* ---------------- .archive -----------------*/
 .archive{
-	padding-top: 7px;
-	padding-bottom: 1.2em;
 	background-color: #fbfbfb;
 	color: #666666;
 }
@@ -295,10 +307,10 @@ input[type="submit"] {
     padding-left: 25px;
     padding-right: 25px;
     max-width: 1200px;
-    width: 100%;
+    /*width: 100%;*/
 }
 .archive__title {
-  text-align: center;
+  /*text-align: center;*/
   font-size: 2em;
 }
 .archive-cards {
@@ -306,7 +318,7 @@ input[type="submit"] {
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
-    width: 1250px;
+    width: 1200px;
     max-width: 100%;
 }
 
@@ -315,6 +327,11 @@ input[type="submit"] {
     width: 240px;
     max-width: 100%;
     padding-bottom: 30px;
+    opacity: 0.85;
+}
+
+.archive-cards-item__cover {
+	border-bottom: 3px #4267B2 solid;
 }
 
 .archive-cards-item__title {
@@ -342,14 +359,13 @@ input[type="submit"] {
     font-size: 1.0em;
     font-weight: 700;
 	left: 5%;
-	top: -10%;
-	opacity: 0.8;
+	top: -30px;
 }
 
 .archive-publish-date {
     position: absolute;
-    top: 17%;
-    left: 30%;
+	top: 10px;
+    left: 20px;
 }
 
 .archive-publish-date__day {
@@ -362,42 +378,31 @@ input[type="submit"] {
 
 /* ---------------- .subscribe -----------------*/
 .subscribe {
-  background-color: #fffaca;
-}
-
-.subscribe--color-ccc {
-
+  background-color: #4267B2; /*#fffaca;*/
+  color: white;
 }
 
 .subscribe__inner {
-  margin: 0 auto;
-  padding-left: 25px;
-  padding-right: 25px;
-  max-width: 1200px;
-  width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	max-width: 1200px;
 }
 
 .subscribe__title {
-  text-align: center;
+  /*text-align: center;*/
   font-size: 2em;
 }
 
 .subscribe__description {
-  width: 100%;
+  /*width: 100%;*/
+  padding-left: 20px;
   font-size: 1.4em;
 }
-subscribe-description__inner{
-  width: 70%;
+.subscribe__description a {
+	color: white;
 }
-
-.subscribe-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .subscribe-form {
   width: 100%;
 }
@@ -408,39 +413,30 @@ subscribe-description__inner{
 
 /* ---------------- .about -----------------*/
 .about {
-  /*background-color: #fbf07c;*/
-}
-
-.about--color-ccc {
 
 }
 
 .about__inner {
-  margin: 0 auto;
-  padding-left: 25px;
-  padding-right: 25px;
-  max-width: 1200px;
-  width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	max-width: 1200px;
 }
 
 .about__title {
-  text-align: center;
-  font-size: 2em;
+  	/*text-align: center;*/
+  	font-size: 2em;
 }
 
 .about__description {
-  width: 100%;
-  font-weight: 300;
-  font-size: 1.1em;
-}
-
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
+	padding-left: 20px;
+	font-weight: 300;
+	font-size: 1.1em;
 }
 
 
-
+.content-section {
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+}
