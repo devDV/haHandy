@@ -219,6 +219,7 @@ input[type="submit"] {
 }
 
 .content-cards-item__cover{
+	max-width: 480px;
 	border-bottom: 5px #4267B2 solid;
 }
 
@@ -297,6 +298,16 @@ input[type="submit"] {
 .tag__js {
     background-color: #F7DF1E;
 	color: #000000;
+}
+@media (max-width: 600px) {
+.page-content__cards-item {
+    width: 240px;
+    padding-bottom: 30px;
+}
+
+.content-cards-item__cover{
+	max-width: 240px;
+}
 }
 /* ---------------- .archive -----------------*/
 .archive{
