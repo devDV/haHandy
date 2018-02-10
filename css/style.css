@@ -183,6 +183,7 @@ input[type="submit"] {
 
 .page-footer__contact-link {
   color: #ffffff;
+  text-decoration: underline;
 }
 
 .pager {
@@ -400,13 +401,15 @@ input[type="submit"] {
   padding-left: 20px;
   font-size: 1.4em;
 }
-.subscribe__description a {
-	color: white;
+
+.subscribe__link {
+  color: #ffffff;
+  text-decoration: underline;
 }
+
 .subscribe-form {
   width: 100%;
 }
-
 .subscribe-form__email {
   width: 300px;
 }
