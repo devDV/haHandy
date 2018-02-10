@@ -47,7 +47,6 @@ input[type="submit"] {
     display: flex;
     justify-content: center; /*space-between;*/
     align-items: center;
-    height: 200px;
     min-height: 200px;
     background-image: url('../images/haHandy-stepbystep.png');
     background-position: right center;
